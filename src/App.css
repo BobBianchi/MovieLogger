@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    background-color: #a5a3a9;
 }
 
 .App-logo {
@@ -40,7 +41,38 @@
 .navbar-dark {
     background-color: #2a292b;
     color: white;
-    background-image: linear-gradient(to right, #1f1e20, #181c37, #2f2b30);
+    background-image: linear-gradient(to right, #1f1e20, #4f4f4f, #2f2b30);
     margin-bottom: 2rem;
     min-height: 8rem;
+}
+
+.site-footer {
+    background-color: #2a292b;
+    color: white;
+    background-image: linear-gradient(to right, #1f1e20, #4f4f4f, #2f2b30);
+    padding: 20px 0;
+    margin-top: 2rem;
+}
+
+.moviecard {
+    background-color: #2a292b;
+    color: #a5a3a9;
+}
+
+.cardbody {
+    color: white;
+}
+
+.moviecard-title {
+    vertical-align: bottom;
+}
+
+.moviecard-subtitle {
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.moviecard-imgoverlay {
+    vertical-align: bottom;
 }
