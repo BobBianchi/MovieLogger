@@ -1,10 +1,10 @@
-import MovieList from "../Lists/MovieList";
 import { Container } from "reactstrap";
+import MovieList from "../Lists/MovieList";
 
 export const MainPage = () => {
     return (
         <Container>
-            <MovieList/>
+            <MovieList />
         </Container>
-    )
+    );
 };

@@ -9,8 +9,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-social/bootstrap-social.css";
 import "font-awesome/css/font-awesome.css";
 import { MainPage } from "./pages/MainPage";
+import MixedPage from "./pages/MixedPage";
 import DetailedCard from "./Components/DetailedCard";
 import { MOVIES } from "./app/shared/MOVIES";
+import { SelectedMoviePage } from "./pages/SelectedMoviePage";
 
 function App() {
     return (
@@ -20,10 +22,10 @@ function App() {
             </header>
             <Container>
                 <Row>
-                    {/* <DetailedCard movie={MOVIES[3]} /> */}
-                </Row>
-                <Row>
-                    <MainPage />
+                    {/* <MainPage /> */}
+                    {/* <RandomMoviePage /> */}
+                    {/* <SelectedMoviePage /> */}
+                    <MixedPage />
                 </Row>
             </Container>
             <footer>
