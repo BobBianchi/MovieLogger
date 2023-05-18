@@ -7,18 +7,16 @@ import {
     Nav,
     NavItem,
 } from "reactstrap";
-import { Button } from "reactstrap";
 
-const MainHeader = () => {
+const Header = () => {
     return (
         <Navbar dark>
             <NavbarBrand>
-                {/* <img src={logo} alt="logo" className="float-start" /> */}
-                <h1 className="mt-1">Movie Logger</h1>
+                <h1 className="mt-1">📽 Movie Logger</h1>
             </NavbarBrand>
-            <Button className="btn btn-primary">Button</Button>
+            <NavbarToggler />
         </Navbar>
     );
 };
 
-export default MainHeader;
+export default Header;

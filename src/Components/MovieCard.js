@@ -1,7 +1,8 @@
 import { Card, CardBody, CardText, CardSubtitle, CardTitle } from "reactstrap";
 import { truncateDescription } from "../app/utils/truncateDescription";
 
-const MovieCard = (props) => {
+const MovieCard = ({ movie }) => {
+    const {title, image, year, description, director} = movie
     return (
         <Card
             color="dark"
@@ -10,15 +11,13 @@ const MovieCard = (props) => {
                 width: "18rem",
             }}
         >
-            <img alt={`${props.movie.title} poster`} src={props.movie.image} />
+            <img alt={`${title} poster`} src={image} />
             <CardBody>
-                <CardTitle tag="h5">{props.movie.title}</CardTitle>
+                <CardTitle tag="h5">{title}</CardTitle>
                 <CardSubtitle className="mb-2 text-muted" tag="h6">
-                    {props.movie.year}
+                    {year}
                 </CardSubtitle>
-                <CardText>
-                    {truncateDescription(props.movie.description)}...
-                </CardText>
+                <CardText>{truncateDescription(description)}...</CardText>
             </CardBody>
         </Card>
     );

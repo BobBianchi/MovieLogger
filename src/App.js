@@ -1,8 +1,9 @@
 import { Col, Row, Container } from "reactstrap";
 import "./App.css";
-import MovieCard from "./Components/MovieCard";
-import { MOVIES } from "./app/shared/MOVIES.js";
-import MainHeader from "./Components/Header";
+// import MovieCard from "./Components/MovieCard";
+import MovieList from "./Lists/MovieList";
+// import { MOVIES } from "./app/shared/MOVIES.js";
+import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-social/bootstrap-social.css";
@@ -11,9 +12,14 @@ import "font-awesome/css/font-awesome.css";
 function App() {
     return (
         <div className="App">
-            <MainHeader />
+            <header>
+                <Header />
+            </header>
             <Container>
                 <Row>
+                    <MovieList />
+                </Row>
+                {/* <Row>
                     <Col>
                         <MovieCard movie={MOVIES[0]} />
                     </Col>
@@ -41,7 +47,7 @@ function App() {
                     <Col>
                         <MovieCard movie={MOVIES[7]} />
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
             <Footer />
         </div>
