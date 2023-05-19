@@ -13,6 +13,9 @@ import MixedPage from "./pages/MixedPage";
 import DetailedCard from "./Components/DetailedCard";
 import { MOVIES } from "./app/shared/MOVIES";
 import { SelectedMoviePage } from "./pages/SelectedMoviePage";
+import { Routes, Route } from "react-router-dom";
+import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
     return (
@@ -20,14 +23,11 @@ function App() {
             <header>
                 <Header />
             </header>
-            <Container>
-                <Row>
-                    {/* <MainPage /> */}
-                    {/* <RandomMoviePage /> */}
-                    {/* <SelectedMoviePage /> */}
-                    <MixedPage />
-                </Row>
-            </Container>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="contact" element={<ContactPage />} />
+                <Route path="mixed" element={<MixedPage />} />
+            </Routes>
             <footer>
                 <Footer />
             </footer>

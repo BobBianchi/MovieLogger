@@ -24,6 +24,12 @@ export const selectMovieById = (id) => {
     return MOVIES.find((movie) => movie.id === id);
 };
 
+const initialState = {
+    campsitesArray: [],
+    isLoading: true,
+    errMsg: ''
+};
+
 const moviesSlice = createSlice({
     name: "movies",
     initialState,
